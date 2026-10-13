@@ -67,21 +67,65 @@ Validation curves and confusion matrices are in `results/`.
 
 Test-set predictions at `conf=0.25`.
 
-| | |
-|---|---|
-| ![](docs/figures/example_chausson.jpg) | ![](docs/figures/example_chocolatine_grid.jpg) |
-| Chaussons, several instances, confidence 0.92-0.95 | Dense bakery tray: about 30 chocolatines detected at once |
-| ![](docs/figures/example_eclair.jpg) | ![](docs/figures/failure_macaron_tray.jpg) |
-| Chocolate éclairs, confidence 0.78-0.87 | **Failure:** tray of 24 macarons, 15 found, all at low confidence (0.25-0.58), see [Error analysis](#error-analysis) |
-| ![](docs/figures/failure_eclair_chausson.jpg) | |
-| **Failure:** low-confidence chausson box (0.28) on an éclair | |
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/figures/example_chausson.jpg" width="200" alt="Chaussons détectés">
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/figures/example_chocolatine_grid.jpg" width="200" alt="Plateau de chocolatines">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Chaussons</b><br>
+      Several instances · Confidence: 0.92–0.95
+    </td>
+    <td align="center">
+      <b>Chocolatines</b><br>
+      Dense bakery tray · About 30 detections
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/figures/example_eclair.jpg" width="200" alt="Éclairs au chocolat">
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/figures/failure_macaron_tray.jpg" width="200" alt="Échec de détection des macarons">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Chocolate éclairs</b><br>
+      Confidence: 0.78–0.87
+    </td>
+    <td align="center">
+      <b> Failure: Macaron tray</b><br>
+      15 of 24 detected · Low confidence: 0.25–0.58<br>
+      <a href="#error-analysis">See error analysis</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/figures/failure_eclair_chausson.jpg" width="200" alt="Erreur de détection sur un éclair">
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b> Failure: Misclassification</b><br>
+      Low-confidence chausson detection (0.28) on an éclair
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 *Example images collected from the web during the course project; original
 sources were not tracked. If you own one of them and want it removed, open an
 issue.*
 
 <p align="center">
-  <img src="results/confusion_matrix.png" alt="confusion matrix (validation)" width="450">
+  <img src="results/confusion_matrix.png" alt="confusion matrix (validation)" width="550">
 </p>
 
 ## Error analysis
