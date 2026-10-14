@@ -1,0 +1,8 @@
+@"
+.venv/
+runs/
+__pycache__/
+*.jpg
+!docs/figures/*.jpg
+!results/*.jpg
+"@ | Out-File -Encoding utf8 .gitignore

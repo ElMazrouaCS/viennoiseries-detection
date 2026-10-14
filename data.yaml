@@ -1,0 +1,6 @@
+train: dataset/train/images
+val: dataset/val/images
+test: dataset/test/images
+
+nc: 7
+names: ["chausson", "chocolatine", "croissant", "eclair", "macaron", "millefeuille" , "tarte"]
